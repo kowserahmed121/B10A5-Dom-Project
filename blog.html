@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>blog</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="w-11/12 m-auto">
+    <nav class="py-6">
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <button id="home-btn" class="btn btn-warning text-xl">Home</button>
+        </div>
+        <div class="navbar-center hidden md:block">
+          <div class="flex justify-center items-center space-x-3">
+            <div>
+              <img src="./assets/logo.png" alt="" />
+            </div>
+            <p class="font-bold text-xl">Donation For Bangladesh</p>
+          </div>
+        </div>
+        <div class="navbar-end">
+          <div class="flex justify-center space-x-2">
+            <img src="./assets/coin.png" alt=" " />
+            <div class="flex justify-center text-xl text-gray-500 font-bold">
+              <p>500</p>
+              <p>BDT</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main class="py-16">
+        <h1 class="text-5xl font-bold"> Important FAQ ?</h1>
+      <div class="join join-vertical w-full py-8 ">
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="my-accordion-4" checked="checked" />
+          <div class="collapse-title text-xl font-medium">
+            What is the document object model(DOM)?
+          </div>
+          <div class="collapse-content">
+            <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the page so that programs can change the document structure, style, and content. The DOM represents the document as nodes and objects; that way, programming languages can interact with the page.</p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="my-accordion-4" />
+          <div class="collapse-title text-xl font-medium">
+            How is event propagation handled in the DOM?
+          </div>
+          <div class="collapse-content">
+            <p>Event propagation in the DOM is managed through three phases: capturing, target, and bubbling. In the capturing phase, the event descends from the root to the target node. The target phase involves the event being handled at the target node. Finally, during the bubbling phase, the event bubbles up from the target node back to the root. Event handlers can be registered for any of these phases, but by default, they are set for the bubbling phase. To stop propagation, the method stopPropagation() can be used. This prevents further propagation of the current event in the capturing and bubbling phases.</p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="my-accordion-4" />
+          <div class="collapse-title text-xl font-medium">
+            What are the performance considerations when working with the DOM?
+          </div>
+          <div class="collapse-content">
+            <p>The DOM’s performance is influenced by how it’s manipulated. Frequent changes can cause layout thrashing, where the browser recalculates styles and layouts repeatedly, slowing down the application. Minimizing direct interactions with the DOM improves performance. Batch your changes and apply them simultaneously to avoid unnecessary reflows and repaints. Use DocumentFragment when you need to insert multiple new nodes into the DOM. It allows for memory-efficient, faster updates as it doesn’t cause page reflow until appended to the actual DOM. Be mindful of event delegation; attaching too many listeners can degrade performance. Instead, use event bubbling or capturing at a higher level in the DOM tree. Lastly, consider using virtual DOM-based libraries like React that minimize costly DOM operations via diffing algorithms..</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./javaScript/blog-toggole.js"></script>
+  </body>
+</html>
