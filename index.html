@@ -32,7 +32,7 @@
             <div class="flex justify-center space-x-2">
               <img src="./assets/coin.png" alt=" " />
               <div class="flex justify-center text-xl text-gray-500 font-bold">
-                <p>500</p>
+                <p id="total-amount">500</p>
                 <p>BDT</p>
               </div>
             </div>
@@ -41,7 +41,7 @@
       </nav>
       <div class="pt-12 flex items-center justify-center space-x-4">
         <button class="btn btn-warning text-xl">Blog</button>
-        <button class="btn btn-outline btn-warning text-xl">Warning</button>
+        <button class="btn btn-outline btn-warning text-xl">History</button>
       </div>
     </header>
     <main>
@@ -56,7 +56,7 @@
               <div class="flex space-x-2">
                 <img src="./assets/coin.png" alt=" " />
                 <div class="flex text-xl text-gray-500 font-bold">
-                  <p>500</p>
+                  <p id="feni-total-amount">500</p>
                   <p>BDT</p>
                 </div>
               </div>
@@ -72,7 +72,9 @@
             </p>
             <div class="flex flex-col gap-4">
               <input
+              id="feni-input-flied"
                 type="text"
+                autocomplete="off"
                 placeholder="Write Your Donation"
                 class="input input-bordered input-md w-full"
               />
