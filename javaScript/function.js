@@ -9,3 +9,10 @@ function getTextValueById(id){
     const textFloatValue = parseFloat(textValue);
     return textFloatValue;
 }
+
+function showHistoryById(id){
+    document.getElementById("main-container").classList.add("hidden");
+    document.getElementById("history-container").classList.add("hidden")
+
+    document.getElementById(id).classList.remove("hidden")
+}
