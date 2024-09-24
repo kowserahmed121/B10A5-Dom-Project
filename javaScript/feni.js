@@ -20,8 +20,6 @@ document.getElementById("feni-btn").addEventListener("click", function () {
     <p>${new Date()}</p>
     `;
     document.getElementById("history-container").appendChild(div);
-
-    // modal
   } else {
     alert("not ok");
   }
