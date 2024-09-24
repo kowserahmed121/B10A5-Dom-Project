@@ -13,6 +13,15 @@ document.getElementById("feni-btn").addEventListener("click", function () {
 
     const feniBalance = textMoneyValue + inputValue;
     document.getElementById("feni-total-amount").innerText = feniBalance;
+    const div = document.createElement("div");
+    div.classList.add("border-2", "p-6", "rounded-md", "space-y-4", "mb-4");
+    div.innerHTML = `
+    <h4 class="text-2xl">Donation Amount ${inputValue} for flood feni, Bangladesh</h4>
+    <p>${new Date()}</p>
+    `;
+    document.getElementById("history-container").appendChild(div);
+
+    // modal
   } else {
     alert("not ok");
   }
